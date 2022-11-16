@@ -1,0 +1,13 @@
+
+-- create
+CREATE TABLE IF NOT EXISTS countries ( 
+COUNTRY_ID varchar(2) NOT NULL UNIQUE PRIMARY KEY,
+COUNTRY_NAME varchar(40) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS country_new
+AS SELECT * FROM countries;
+
+SHOW COLUMNS FROM country_new;
+
+SELECT * FROM country_new;
